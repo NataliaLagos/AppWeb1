@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.Master.cs" Inherits="AppEmpleados.App.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <!-- enlaces a estilos -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> App Empleados </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="css/Estilos.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!-- menu -->
+             <header class="estiloHeader">
+        <nav class="menuNav">
+            <ul class="menuUl">
+                <li class="menuLi"> <a class="menuLink" href="./Default.aspx"> Home </a></li>
+                <li class="menuLi"> <a class="menuLink" href="./Datos.aspx"> Datos </a></li>
+                <li class="menuLi"> <a class="menuLink" href="./Formulario.aspx"> Formulario </a></li>
+                <li class="menuLi"> <a class="menuLink" href="./Nosotros.aspx"> Nosotros </a></li>
+            </ul>
+        </nav>
+    </header>
+            <!-- Fin de menu -->
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+             
+
+             <!-- footer -->
+            <footer class="estiloFooter">
+        <h3 class="textoFooter"> by: Andrea Natalia Lagos Leon</h3>
+        <div class="contenedorGib">
+            <div> 
+                <a href="https://github.com/jroperosena"> <img class="ico" src="pic/github.png" alt=""></a>
+           </div>
+           <div> 
+            <small> anlagos9@misena.edu.co </small>
+           </div>
+        </div>
+    </footer>
+            <!-- fin de footer -->
+        </div>
+    </form>
+</body>
+</html>
